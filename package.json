@@ -7,18 +7,22 @@
     "build": "gulp",
     "clean": "gulp clean",
     "watch": "gulp watch",
-    "serve": "firebase serve -p 1234 -o 0.0.0.0"
+    "serve": "firebase serve -p 1234 -o 0.0.0.0",
+    "test": "npm run build && ts-mocha test/**/*.spec.ts"
   },
   "author": "Ava Mattie",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@types/mocha": "^9.1.1",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-sass": "^5.1.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "handlebars-generator": "^3.2.3",
+    "mocha": "^10.0.0",
     "node-sass": "^7.0.1",
     "ts-loader": "^9.3.0",
+    "ts-mocha": "^10.0.0",
     "typescript": "^4.6.4",
     "webpack": "^5.72.0",
     "webpack-stream": "^7.0.0"

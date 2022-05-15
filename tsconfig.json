@@ -7,10 +7,11 @@
     "sourceMap": false
   },
   "include": [
-    "**/*.ts"
+    "src/ts/**/*.ts",
+    "test/**/*.ts"
   ],
   "files": [
-      "shell.ts",
-      "site.ts"
+      "src/ts/shell.ts",
+      "src/ts/site.ts"
   ]
 }
