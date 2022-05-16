@@ -1,1 +1,3 @@
-console.log("site.ts");
+import {RollController} from "./components/roll_controller";
+
+new RollController();

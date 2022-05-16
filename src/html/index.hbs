@@ -8,7 +8,30 @@
     <script>{{{ static.js }}}</script>
   </head>
   <body class="hidden">
-    <main>Hello, world.</main>
+    <main>
+      <section class="roll-button-container">
+        <button id="rollButton" class="roll-button reset">
+          Roll
+        </button>
+      </section>
+      <section class="roll-results" id="rollResults">
+        <div class="result-numbers">
+          <div class="result-number">
+            <div class="label">Rolled</div>
+            <div class="value" id="rollResult"></div>
+          </div>
+          <div class="result-number">
+            <div class="label">Difficulty</div>
+            <div class="value" id="rollDifficulty"></div>
+          </div>
+        </div>
+        <div class="result-description" id="rollDescription"></div>
+        <ul class="roll-effects-list reset" id="rollEffectsList"></ul>
+      </section>
+    </main>
     <script src="/js/site.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
   </body>
 </html>

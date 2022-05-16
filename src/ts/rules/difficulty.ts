@@ -86,3 +86,25 @@ export const DifficulyLevels = [
     "A task that normal humans couldn't consider (but doesn't break the laws of physics)",
   ),
 ];
+
+export const RollEffects: RollEffectsType = {
+  1: [
+    "suffer +2 damage or free GM intrusion",
+  ],
+  17: [
+    "+1 damage",
+  ],
+  18: [
+    "+2 damage",
+  ],
+  19: [
+    "+3 damage",
+  ],
+  20: [
+    "+4 damage or major effect + no pool cost",
+  ],
+};
+
+type RollEffectsType = {
+  [key: number]: string[];
+}
