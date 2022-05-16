@@ -44,8 +44,7 @@ export class RollController {
     this.toggleRolling(true);
     await this.sleep(ROLL_TIME);
 
-    // const dieResult = D20.roll();
-    const dieResult = 20;
+    const dieResult = D20.roll();
     const difficultyLevel = DifficultyLevel.getByRoll(dieResult);
     if (difficultyLevel === null) {
       console.warn(`No difficulty level found for die result ${dieResult}`);
