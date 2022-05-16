@@ -2,6 +2,7 @@
 @import "core/reset";
 @import "core/site-layout";
 @import "components/roll-results";
+@import "components/site-controls";
 
 * {
   box-sizing: border-box;
@@ -14,4 +15,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: var(--primary-font);
+  background: var(--content-bg);
+  color: var(--text-color);
 }

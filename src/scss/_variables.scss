@@ -1,6 +1,86 @@
 :root {
+  --theme-primary: #000;
+  --theme-primary-compliment: #fff;
+  --theme-secondary: #000;
+  --theme-secondary-compliment: #fff;
+  --theme-tertiary: rgba(0, 0, 0, 0.5);
+  --theme-tertiary-compliment: #fff;
+  --content-bg: #fff;
+  --text-color: #000;
   --content-width: 800px;
   --primary-font: 'Quicksand', sans-serif;
   // Material shadow
   --mat-shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+// https://lospec.com/palette-list/twilight-5
+.twilight-theme {
+  --theme-primary: #ee8695;
+  --theme-primary-compliment: #333f58;
+  --theme-secondary: #fbbbad;
+  --theme-secondary-compliment: #292831;
+  --theme-tertiary: var(--theme-secondary);
+  --theme-tertiary-compliment: var(--theme-secondary-compliment);
+  --content-bg: #333f58;
+  --text-color: #4a7a96;
+}
+
+// https://lospec.com/palette-list/blessing
+.blessing-theme {
+  --theme-primary: #ffb3cb;
+  --theme-primary-compliment: #f7ffae;
+  --theme-secondary: #d8bfd8;
+  --theme-secondary-compliment: #000;
+  --theme-tertiary: #96fbc7;
+  --theme-tertiary-compliment: #000;
+  --content-bg: #74569b;
+  --text-color: #f7ffae;
+}
+
+// https://lospec.com/palette-list/capp-5
+.capp5-theme {
+  --theme-primary: #6b61ff;
+  --theme-primary-compliment: #f0eff4;
+  --theme-secondary: #8ecde6;
+  --theme-secondary-compliment: #f0eff4;
+  --theme-tertiary: #fadda2;
+  --theme-tertiary-compliment: #000;
+  --content-bg: #66a1ff;
+  --text-color: #f0eff4;
+}
+
+// https://lospec.com/palette-list/nicole-punk-82
+.nicole-punk-82-theme {
+  --theme-primary: #f2ab37;
+  --theme-primary-compliment: #faf5d8;
+  --theme-secondary: #f2ab37;
+  --theme-secondary-compliment: #faf5d8;
+  --theme-tertiary: #cd5f2a;
+  --theme-tertiary-compliment: #fff;
+  --content-bg: #faf5d8;
+  --text-color: #21181b;
+}
+
+// https://lospec.com/palette-list/sunset-red
+.sunset-red-theme {
+  --theme-primary: #ee243d;
+  --theme-primary-compliment: #281a2d;
+  --theme-secondary: #af2747;
+  --theme-secondary-compliment: #281a2d;
+  --theme-tertiary: #6b2341;
+  --theme-tertiary-compliment: #fff;
+  --content-bg: #0d101b;
+  --text-color: #ee243d;
+}
+
+// https://lospec.com/palette-list/slimy-05
+.slimy-05-theme {
+  --theme-primary: #40985e;
+  --theme-primary-compliment: #0a1a2f;
+  --theme-secondary: #1a644e;
+  --theme-secondary-compliment: #d1cb95;
+  --theme-tertiary: #04373b;
+  --theme-tertiary-compliment: #d1cb95;
+  --content-bg: #0a1a2f;
+  --text-color: #d1cb95;
 }
