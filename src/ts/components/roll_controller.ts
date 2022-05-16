@@ -9,6 +9,8 @@ const ROLL_TIME = 1500;
 
 export class RollController {
 
+  private rolling = false;
+
   private readonly rollButton: HTMLButtonElement;
   private readonly resultsContainerEl: HTMLElement;
   private readonly resultEl: HTMLElement;
@@ -24,7 +26,13 @@ export class RollController {
     this.descriptionEl = document.getElementById("rollDescription");
     this.rollEffectsList = document.getElementById("rollEffectsList");
 
+    window.addEventListener("keypress", (e) => this.onKeypress(e));
     this.rollButton.addEventListener("click", () => this.onRollButtonClick());
+  }
+
+  onKeypress(event: KeyboardEvent) {
+    if (event.key !== "r") return;
+    this.roll();
   }
 
   private onRollButtonClick() {
@@ -32,6 +40,7 @@ export class RollController {
   }
 
   private async roll() {
+    if (this.rolling) return;
     this.toggleRolling(true);
     await this.sleep(ROLL_TIME);
 
@@ -48,6 +57,7 @@ export class RollController {
   }
 
   private toggleRolling(isRolling: boolean) {
+    this.rolling = isRolling;
     this.rollButton.disabled = isRolling;
     this.rollButton.classList.toggle(ROLLING_CSS_CLASS, isRolling);
     this.resultsContainerEl.classList.toggle(ROLLING_CSS_CLASS, isRolling);
