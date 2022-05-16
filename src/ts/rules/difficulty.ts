@@ -1,5 +1,7 @@
 /**
  * Class which contains helper methods that can help deal with difficulty.
+ * 
+ * Source: https://www.thealexandrian.net/creations/numenera/numenera-cheat-sheet-final.pdf
  */
 export class DifficultyLevel {
   readonly targetNumber: number;
