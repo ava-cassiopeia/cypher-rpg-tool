@@ -6,7 +6,7 @@ const ts = require("gulp-typescript");
 const webpack = require("webpack-stream");
 const HandlebarsGenerator = require("handlebars-generator");
 
-const tsProject = ts.createProject("src/ts/tsconfig.json");
+const tsProject = ts.createProject("tsconfig.json");
 
 const OUTPUT_DIR = "build";
 

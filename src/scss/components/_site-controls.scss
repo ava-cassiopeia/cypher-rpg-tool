@@ -1,0 +1,21 @@
+.site-controls {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.site-theme-selector {
+  select {
+    padding: 4px 12px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    color: var(--text-color);
+
+    option {
+      background: var(--content-bg);
+    }
+  }
+}

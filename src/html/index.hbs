@@ -7,8 +7,54 @@
     <style>{{{ static.css }}}</style>
     <script>{{{ static.js }}}</script>
   </head>
-  <body class="hidden">
-    <main>Hello, world.</main>
+  <body>
+    <section class="site-controls">
+      <div class="site-theme-selector">
+        <label for="siteThemeSelector">
+          Site Theme:
+        </label>
+        <select id="siteThemeSelector">
+          <option value="monochrome">Monochrome</option>
+          <option value="twilight">Twilight</option>
+          <option value="blessing">Blessing</option>
+          <option value="capp5">CAPP-5</option>
+          <option value="nicole-punk-82">Nicole Punk 82</option>
+          <option value="sunset-red">Sunset Red</option>
+          <option value="slimy-05">Slimy 05</option>
+        </select>
+      </div>
+    </section>
+    <main>
+      <section class="roll-button-container">
+        <button id="rollButton" class="roll-button reset">
+          Roll
+        </button>
+      </section>
+      <section class="roll-results" id="rollResults">
+        <div class="result-numbers">
+          <div class="result-number">
+            <div class="label">Rolled</div>
+            <div class="value">
+              <span class="material-icons" aria-hidden="true">casino</span>
+              <span id="rollResult"></span>
+            </div>
+          </div>
+          <div class="result-number">
+            <div class="label">Difficulty</div>
+            <div class="value">
+              <span class="material-icons" aria-hidden="true">fitness_center</span>
+              <span id="rollDifficulty"></span>
+            </div>
+          </div>
+        </div>
+        <div class="result-description" id="rollDescription"></div>
+        <ul class="roll-effects-list reset" id="rollEffectsList"></ul>
+      </section>
+    </main>
     <script src="/js/site.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </body>
 </html>

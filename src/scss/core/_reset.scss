@@ -1,0 +1,17 @@
+button.reset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ul.reset {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
