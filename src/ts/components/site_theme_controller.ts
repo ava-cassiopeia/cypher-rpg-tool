@@ -3,11 +3,11 @@ export class SiteThemeController {
   private currentTheme: string = "";
 
   private readonly dropdown: HTMLSelectElement;
-  private readonly body: HTMLBodyElement;
+  private readonly themeElement: HTMLHtmlElement;
 
   constructor() {
     this.dropdown = document.getElementById("siteThemeSelector") as HTMLSelectElement;
-    this.body = document.getElementsByTagName("body")[0]!;
+    this.themeElement = document.getElementsByTagName("html")[0]!;
 
     this.dropdown.addEventListener("change", () => this.onDropdownChange());
     this.loadThemeSelection();
@@ -22,7 +22,7 @@ export class SiteThemeController {
     this.clearCurrentTheme();
     const themeName = this.dropdown.value.toLowerCase();
     const themeClass = this.getThemeCssClass(themeName);
-    this.body.classList.add(themeClass);
+    this.themeElement.classList.add(themeClass);
     this.currentTheme = themeName;
     this.saveThemeSelection();
   }
@@ -30,7 +30,7 @@ export class SiteThemeController {
   private clearCurrentTheme() {
     if (this.currentTheme === "") return;
     const themeClass = this.getThemeCssClass(this.currentTheme);
-    this.body.classList.remove(themeClass);
+    this.themeElement.classList.remove(themeClass);
   }
 
   private getThemeCssClass(themeName: string): string {

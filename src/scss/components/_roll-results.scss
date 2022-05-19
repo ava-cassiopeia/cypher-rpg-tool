@@ -14,13 +14,13 @@
     color: var(--color_);
     font-weight: bold;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: var(--color_);
       color: var(--content-bg);
     }
 
     &:disabled {
-      color: var(--color_);
       animation: fadedBlink 700ms linear infinite;
     }
   }
@@ -92,6 +92,10 @@
   .result-description {
     font-size: 28px;
     margin: 0 0 54px;
+  }
+
+  .roll-effects-list {
+    padding: 0 12px;
   }
 
   .roll-effect {
