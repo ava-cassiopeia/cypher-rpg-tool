@@ -63,7 +63,11 @@ export class RollController {
     let totalModifier = 0;
 
     // Skill / training reduces difficulty by 1.
-    if (this.modifiersCtrl.isTrained) totalModifier++;
+    if (this.modifiersCtrl.isTrained) totalModifier += 1;
+    // Specialization reduces difficulty by 2.
+    if (this.modifiersCtrl.isSpecialized) totalModifier += 2;
+    // Inability increases difficulty by 1.
+    if (this.modifiersCtrl.isInable) totalModifier -= 1;
 
     return totalModifier;
   }
