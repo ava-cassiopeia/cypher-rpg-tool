@@ -1,5 +1,6 @@
 import {D20} from "../rules/d20";
 import {DifficultyLevel, RollEffects} from "../rules/difficulty";
+import {RollModifiersController} from "./roll_modifiers_controller";
 
 const SHOW_RESULTS_CSS_CLASS = "show";
 const ROLLING_CSS_CLASS = "rolling";
@@ -18,7 +19,7 @@ export class RollController {
   private readonly descriptionEl: HTMLElement;
   private readonly rollEffectsList: HTMLElement;
 
-  constructor() {
+  constructor(private readonly modifiersCtrl: RollModifiersController) {
     this.rollButton = document.getElementById("rollButton") as HTMLButtonElement;
     this.resultsContainerEl = document.getElementById("rollResults");
     this.resultEl = document.getElementById("rollResult");
@@ -45,7 +46,9 @@ export class RollController {
     await this.sleep(ROLL_TIME);
 
     const dieResult = D20.roll();
-    const difficultyLevel = DifficultyLevel.getByRoll(dieResult);
+    const difficultyModifier = this.getDifficultyModifier();
+    const difficultyLevel =
+        DifficultyLevel.getByRoll(dieResult, difficultyModifier);
     if (difficultyLevel === null) {
       console.warn(`No difficulty level found for die result ${dieResult}`);
       this.toggleRolling(false);
@@ -54,6 +57,15 @@ export class RollController {
     this.setResult(dieResult, difficultyLevel);
 
     this.toggleRolling(false);
+  }
+
+  private getDifficultyModifier(): number {
+    let totalModifier = 0;
+
+    // Skill / training reduces difficulty by 1.
+    if (this.modifiersCtrl.isTrained) totalModifier++;
+
+    return totalModifier;
   }
 
   private toggleRolling(isRolling: boolean) {
