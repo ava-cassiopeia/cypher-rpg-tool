@@ -66,5 +66,17 @@ describe("DifficultyLevel", () => {
       assert.equal(difficultyLevel.difficulty, 4);
       assert.equal(difficultyLevel.targetNumber, 12);
     });
+    it('correctly handles difficulty mods that cause the total diff to be negative', () => {
+      const difficultyLevel =
+          DifficultyLevel.getByRoll(11, /** difficultyMod= */ -10);
+
+      assert.equal(difficultyLevel, null);
+    });
+    it('correctly handles difficulty mods that cause the total diff to be super high', () => {
+      const difficultyLevel =
+          DifficultyLevel.getByRoll(11, /** difficultyMod= */ 100);
+
+      assert.equal(difficultyLevel, null);
+    });
   });
 });

@@ -1,0 +1,21 @@
+.toggle-box {
+  display: flex;
+  align-items: center;
+  background: var(--theme-secondary);
+  color: var(--theme-secondary-compliment);
+  padding: 12px;
+  margin: 0 8px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: box-shadow 300ms ease;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: var(--mat-shadow-3);
+  }
+
+  .checkbox {
+    margin: 0 12px 0 0;
+  }
+}
