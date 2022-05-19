@@ -14,13 +14,13 @@
     color: var(--color_);
     font-weight: bold;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: var(--color_);
       color: var(--content-bg);
     }
 
     &:disabled {
-      color: var(--color_);
       animation: fadedBlink 700ms linear infinite;
     }
   }
