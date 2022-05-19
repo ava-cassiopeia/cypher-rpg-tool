@@ -4,6 +4,7 @@
 node_modules/
 
 # Firebase
+.firebaserc
 firebase-debug.log
 
 # Project-specific generated files
