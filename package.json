@@ -11,7 +11,7 @@
     "test": "npm run build && ts-mocha test/**/*.spec.ts"
   },
   "author": "Ava Mattie",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "devDependencies": {
     "@types/mocha": "^9.1.1",
     "gulp": "^4.0.2",
