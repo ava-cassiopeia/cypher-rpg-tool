@@ -1,6 +1,6 @@
 {
   "name": "cypher-rpg-tool",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Stateless web tool that helps players digitally play the Cypher System TTRPG.",
   "main": "index.js",
   "scripts": {
