@@ -16,6 +16,10 @@
   --mat-shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.monochrome-theme {
+  --border-color: #000;
+}
+
 // https://lospec.com/palette-list/twilight-5
 .twilight-theme {
   --theme-primary: #ee8695;
@@ -62,6 +66,7 @@
   --theme-tertiary-compliment: #fff;
   --content-bg: #faf5d8;
   --text-color: #21181b;
+  --border-color: #21181b;
 }
 
 // https://lospec.com/palette-list/sunset-red
