@@ -1,5 +1,4 @@
 .site-controls {
-  padding: 12px;
   display: flex;
   align-items: center;
 
@@ -15,19 +14,22 @@
     height: 100%;
     display: inline-block;
     border: none;
-    padding: 4px 8px;
+    padding: 4px 16px;
     background: transparent;
     margin: 0;
     color: var(--link-color);
 
     &:hover {
       cursor: pointer;
-      background: rgba(0, 0, 0, 0.2);
+      background: var(--theme-primary);
+      color: var(--theme-primary-compliment);
     }
   }
 }
 
 .site-theme-selector {
+  padding: 12px;
+
   select {
     padding: 4px 12px;
     font-size: 16px;
