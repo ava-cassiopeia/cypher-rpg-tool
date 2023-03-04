@@ -10,22 +10,7 @@
     <script>{{{ static.js }}}</script>
   </head>
   <body>
-    <section class="site-controls">
-      <div class="site-theme-selector">
-        <label for="siteThemeSelector">
-          Site Theme:
-        </label>
-        <select id="siteThemeSelector">
-          <option value="monochrome">Monochrome</option>
-          <option value="twilight">Twilight</option>
-          <option value="blessing">Blessing</option>
-          <option value="capp5">CAPP-5</option>
-          <option value="nicole-punk-82">Nicole Punk 82</option>
-          <option value="sunset-red">Sunset Red</option>
-          <option value="slimy-05">Slimy 05</option>
-        </select>
-      </div>
-    </section>
+    {{> parts/site_controls }}
     <main>
       <section class="roll-button-container">
         <button id="rollButton" class="roll-button reset">

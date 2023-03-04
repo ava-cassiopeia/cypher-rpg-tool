@@ -2,7 +2,29 @@
   padding: 12px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+
+  .fill {
+    flex: 1 0;
+  }
+}
+
+.site-nav {
+  height: 100%;
+
+  .nav-item {
+    height: 100%;
+    display: inline-block;
+    border: none;
+    padding: 4px 8px;
+    background: transparent;
+    margin: 0;
+    color: var(--link-color);
+
+    &:hover {
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 
 .site-theme-selector {
