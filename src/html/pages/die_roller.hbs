@@ -1,0 +1,32 @@
+<div class="page" data-page-id="dieRoller">
+  <section class="roll-button-container">
+    <button id="rollButton" class="roll-button reset">
+      Roll
+    </button>
+  </section>
+  <section class="roll-modifiers">
+    {{> components/toggle_box id="trainedToggle" label="Trained" }}
+    {{> components/toggle_box id="specializationToggle" label="Specialization" }}
+    {{> components/toggle_box id="inabilityToggle" label="Inable" }}
+  </section>
+  <section class="roll-results" id="rollResults">
+    <div class="result-numbers">
+      <div class="result-number">
+        <div class="label">Rolled</div>
+        <div class="value">
+          <span class="material-icons" aria-hidden="true">casino</span>
+          <span id="rollResult"></span>
+        </div>
+      </div>
+      <div class="result-number">
+        <div class="label">Difficulty</div>
+        <div class="value">
+          <span class="material-icons" aria-hidden="true">fitness_center</span>
+          <span id="rollDifficulty"></span>
+        </div>
+      </div>
+    </div>
+    <div class="result-description" id="rollDescription"></div>
+    <ul class="roll-effects-list reset" id="rollEffectsList"></ul>
+  </section>
+</div>
