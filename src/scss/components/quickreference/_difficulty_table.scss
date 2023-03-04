@@ -1,0 +1,23 @@
+.quick-reference-difficulty-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 8px;
+  }
+
+  th {
+    text-align: left;
+    font-weight: bold;
+    color: var(--theme-primary);
+  }
+
+  td {
+    border: 1px solid var(--border-color);
+
+    &.difficulty,
+    &.target-number {
+      text-align: center;
+    }
+  }
+}

@@ -103,7 +103,7 @@ export const RollEffects: RollEffectsType = {
     "+3 damage",
   ],
   20: [
-    "+4 damage or major effect + no pool cost",
+    "+4 damage or major effect & no pool cost",
   ],
 };
 
