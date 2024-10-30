@@ -13,7 +13,7 @@
   "author": "Ava Mattie",
   "license": "ISC",
   "devDependencies": {
-    "@types/mocha": "^9.1.1",
+    "@types/mocha": "^10.0.9",
     "firebase-tools": "^13.23.0",
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
