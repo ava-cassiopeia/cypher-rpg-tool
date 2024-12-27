@@ -17,7 +17,7 @@
     "firebase-tools": "^13.27.0",
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^6.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "handlebars-generator": "^3.2.3",
     "mocha": "^10.8.2",
