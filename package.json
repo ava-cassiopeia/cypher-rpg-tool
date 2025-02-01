@@ -21,7 +21,7 @@
     "gulp-typescript": "^6.0.0-alpha.1",
     "handlebars-generator": "^3.2.3",
     "mocha": "^10.8.2",
-    "ts-loader": "^9.5.1",
+    "ts-loader": "^9.5.2",
     "ts-mocha": "^10.0.0",
     "typescript": "^5.7.2",
     "webpack": "^5.96.1",
